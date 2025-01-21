@@ -1,0 +1,1 @@
+print ("secure random generator")
