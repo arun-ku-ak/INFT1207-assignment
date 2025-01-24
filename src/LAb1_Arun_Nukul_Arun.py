@@ -1,3 +1,7 @@
+#Name: Arun Kumar , Nukul Nanchahal, Arun Kumar
+#Date: January 24, 2025
+#Description: We are generating password.
+
 import random
 import string
 def generate_password():
