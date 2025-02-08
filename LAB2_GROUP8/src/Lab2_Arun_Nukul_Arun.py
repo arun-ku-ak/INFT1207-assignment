@@ -1,6 +1,6 @@
-#Name: Arun Kumar, Nukul Nanchahal, Arun Kumar
-#Date: February 7, 2025
-#description: Adding , Listing, Searching, Deleting and updating the books.
+# Name: Arun Kumar, Nukul Nanchahal, Arun Kumar
+# Date: February 7, 2025
+# Description: Adding, Listing, Searching, Deleting, and Updating books.
 
 import csv
 
@@ -17,7 +17,7 @@ def list_books():
         for row in reader:
             print(f"Title: {row[0]}, Author: {row[1]}, Year: {row[2]}")
 
-# Function to search for a book by title.
+# Function to search for a book by title
 def search_book(title):
     with open('books.csv', mode='r') as file:
         reader = csv.reader(file)
@@ -108,5 +108,6 @@ def menu():
         else:
             print("Invalid option, please try again.")
 
-if _name_ == "_main_":
+# This line checks if the script is being run directly
+if __name__ == "__main__":
     menu()
