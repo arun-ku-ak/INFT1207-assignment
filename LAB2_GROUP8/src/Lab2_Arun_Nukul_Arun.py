@@ -1,3 +1,7 @@
+# Name: Arun Kumar, Nukul Nanchahal, Arun Kumar
+# Date: February 7, 2025
+# Description: Adding, Listing, Searching, Deleting, and Updating books.
+
 import csv
 
 # Function to add a book to the CSV file
@@ -6,12 +10,14 @@ def add_book(title, author, year):
         writer = csv.writer(file)
         writer.writerow([title, author, year])
 
+
 # Function to retrieve and display all books
 def list_books():
     with open('books.csv', mode='r') as file:
         reader = csv.reader(file)
         for row in reader:
             print(f"Title: {row[0]}, Author: {row[1]}, Year: {row[2]}")
+
 
 # Function to search for a book by title.
 def search_book(title):
@@ -25,6 +31,7 @@ def search_book(title):
                 break
         if not found:
             print("Book not found.")
+
 
 # Function to delete a book by title
 def delete_book(title):
@@ -46,6 +53,7 @@ def delete_book(title):
     if not found:
         print("Book not found to delete.")
 
+
 # Function to update a book by title
 def update_book(old_title, new_title, new_author, new_year):
     rows = []
@@ -66,6 +74,7 @@ def update_book(old_title, new_title, new_author, new_year):
 
     if not found:
         print("Book not found to update.")
+
 
 # Menu function to allow user interaction
 def menu():
@@ -104,5 +113,6 @@ def menu():
         else:
             print("Invalid option, please try again.")
 
-if _name_ == "_main_":
+
+if __name__ == "__main__":
     menu()
