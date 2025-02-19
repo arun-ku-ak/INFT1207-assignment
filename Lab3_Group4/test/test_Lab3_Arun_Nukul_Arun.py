@@ -1,5 +1,5 @@
 import unittest
-from app.Lab3_Arun_Nukul_Arun import circle_area, trapezium_area, ellipse_area, rhombus_area
+from Lab3_Group4.app.Lab3_Arun_Nukul_Arun import circle_area, trapezium_area, ellipse_area, rhombus_area
 
 
 class TestShapes(unittest.TestCase):
