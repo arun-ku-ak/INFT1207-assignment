@@ -1,3 +1,9 @@
+#Name: Arun Kumar, Nukul Nanchahal, Arun Kumar
+#Date: February 19, 2025
+#Description: This code tests area calculation functions for
+#               circle, trapezium, ellipse, and rhombus with valid and invalid inputs.
+
+
 import unittest
 
 # Import the TestShapes class
