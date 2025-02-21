@@ -7,7 +7,7 @@
 import unittest
 
 # Import the TestShapes class
-from test.test_Lab3_Arun_Nukul_Arun import TestShapes
+from Lab3_group4.test.test_Lab3_Arun_Nukul_Arun import TestShapes
 
 def run_tests(choice):
     suite = unittest.TestSuite()
